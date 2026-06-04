@@ -1,0 +1,58 @@
+aid: dati-trentino-it
+name: Open Data Trentino
+description: >-
+  Open Data Trentino is a open data portal open-data portal for Italy running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 1,381 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/dati-trentino-it/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Open Data Portal
+  - Italy
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: dati-trentino-it:catalog
+    name: Open Data Trentino CKAN Action API
+    description: >-
+      CKAN Action API for Open Data Trentino, a consistent JSON-over-HTTP interface over a catalog of 1,381 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://dati.trentino.it/api/3/action/.
+    humanURL: https://dati.trentino.it
+    baseURL: https://dati.trentino.it/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://dati.trentino.it
+      - type: x-api-endpoint
+        url: https://dati.trentino.it/api/3/action/status_show
+common:
+  - type: Website
+    url: https://dati.trentino.it
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/dati-trentino-it-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/dati-trentino-it-rate-limits.yml
+  - type: FinOps
+    url: finops/dati-trentino-it-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
